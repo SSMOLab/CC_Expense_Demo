@@ -1,0 +1,10 @@
+{
+      "belstarTemplateName": "credit-card-expense-demo", 
+      "tenantTemplateName": "credit-card-expense-demo",
+      "belstarTemplateVersion": "0.1.0",
+      "tenantTemplateVersion": "0.1.0",
+      "author": "", 
+      "description": "demo",
+      "templateType": "信函",
+      "templateCode": "demo"
+    }
