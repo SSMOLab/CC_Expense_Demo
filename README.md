@@ -1,4 +1,4 @@
-# CC_Expense_Demo
+# Credit Card Transaction Statement
 
 ## Credit Card Expense for Multiple Output - Web & PDF
 
