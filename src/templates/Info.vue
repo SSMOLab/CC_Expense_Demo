@@ -1,7 +1,7 @@
 <template>
   <div>
     <app-bar></app-bar>
-    <p class="text-xs text-right text-primary">同源客服電話：(08)8508-8408</p>
+    <p class="text-xs text-right text-primary">圖靈文本客服電話：(08)8508-8408</p>
     <div class="flex items-center">
       <SimpleInfo :simpleInfo="info.simpleInfo" />
       <!-- <LineChart :dataLabels="true" :showYLabels="false" /> -->
@@ -17,10 +17,7 @@
         <Message class="my-1" :message="info.message" />
       </div>
     </div>
-    <Detail
-      :detailsTitle="accountDetail.detailsTitle"
-      :expensesList="accountDetail.expensesList"
-    />
+    <Detail :detailsTitle="accountDetail.detailsTitle" :expensesList="accountDetail.expensesList" />
   </div>
 </template>
 <script>
