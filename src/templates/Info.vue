@@ -4,7 +4,7 @@
     <p class="text-xs text-right text-primary">同源客服電話：(08)8508-8408</p>
     <div class="flex items-center">
       <SimpleInfo :simpleInfo="info.simpleInfo" />
-      <LineChart :dataLabels="true" :showYLabels="false" />
+      <!-- <LineChart :dataLabels="true" :showYLabels="false" /> -->
     </div>
     <div class="flex w-full mb-1">
       <section class="w-1/2">
@@ -32,7 +32,7 @@ import Points from "../components/Points.vue";
 import Message from "../components/Message.vue";
 import Staging from "../components/Staging.vue";
 import Detail from "../components/Detail.vue";
-import LineChart from "../components/Line.vue";
+// import LineChart from "../components/Line.vue";
 export default {
   props: { info: Object, accountDetail: Object },
   components: {
@@ -43,8 +43,8 @@ export default {
     Points,
     Message,
     Staging,
-    Detail,
-    LineChart
+    Detail
+    // LineChart
   },
   data() {
     return {};

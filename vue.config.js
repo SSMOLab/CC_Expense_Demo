@@ -100,19 +100,19 @@ try {
       "templateType": "信函",
       "templateCode": "tuexp_002"
     }`;
-        fs.writeFile(`${dataPath}metadata.json`, metadataString, function(e) {
-          if (e) {
-            throw Error(e);
-          } else {
-            console.log("Export metadata file success");
-          }
-        });
-      } catch (e) {
+    fs.writeFile(`${dataPath}metadata.json`, metadataString, function(e) {
+      if (e) {
         throw Error(e);
+      } else {
+        console.log("Export metadata file success");
       }
-    } catch (e) {
-      console.log(`[ERROR] Export file failed: ${e}`);
-    }
+    });
+  } catch (e) {
+    throw Error(e);
+  }
+} catch (e) {
+  console.log(`[ERROR] Export file failed: ${e}`);
+}
 module.exports = {
   publicPath: "./",
   configureWebpack: {
