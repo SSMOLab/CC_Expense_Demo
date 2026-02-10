@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div data-ag-slot="main-body">
     <component :is="currentView" />
   </div>
 </template>
